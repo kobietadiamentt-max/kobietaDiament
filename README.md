@@ -1,347 +1,566 @@
-# kobietaDiament
-Czuły Reset. 14 dni do spokoju, energii i kobiecej równowagi — Czujesz, że jesteś zmęczona ciągłym „muszę”? Ten e-book pomoże Ci odzyskać spokój, energię i lekkość w codzienności.
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Czuły Reset — 14 dni do spokoju | Kup teraz</title>
-  <meta name="description" content="Czuły Reset — 14 dni do spokoju, energii i kobiecej równowagi. Naturalne metody na stres, rytuały dnia i praktyki oddechowe." />
-  <style>
-    :root{
-      --blue:#0f4c81;
-      --blue-light:#2b6ea8;
-      --bg:#ffffff;
-      --muted:#6b7280;
-      --cta:#d6423b; /* czerwony CTA */
-      --card-shadow: 0 6px 20px rgba(15,76,129,0.08);
-      --radius:14px;
-      --maxwidth:1100px;
-      --gap:20px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family:Inter, "Helvetica Neue", Arial, sans-serif;
-      background:linear-gradient(180deg,#f8fbff 0%, #ffffff 100%);
-      color:#102030;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.5;
-      padding:24px;
-      display:flex;
-      justify-content:center;
-    }
-
-    .container{
-      width:100%;
-      max-width:var(--maxwidth);
-      margin:0 auto;
-    }
-
-    /* HERO */
-    .hero{
-      display:flex;
-      gap:var(--gap);
-      align-items:center;
-      background:var(--bg);
-      border-radius:18px;
-      padding:28px;
-      box-shadow:var(--card-shadow);
-      margin-bottom:28px;
-      flex-wrap:wrap;
-    }
-    .hero-left{
-      flex:1 1 420px;
-      min-width:260px;
-    }
-    .eyebrow{
-      display:inline-block;
-      background:linear-gradient(90deg,var(--blue-light),var(--blue));
-      color:#fff;
-      padding:6px 12px;
-      border-radius:999px;
-      font-size:13px;
-      letter-spacing:.2px;
-      margin-bottom:12px;
-    }
-    h1{
-      margin:0 0 12px 0;
-      font-size:28px;
-      color:var(--blue);
-      line-height:1.06;
-    }
-    .tagline{
-      color:var(--muted);
-      margin-bottom:18px;
-      font-size:16px;
-    }
-    .cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-    .price{
-      background:var(--cta);
-      color:#fff;
-      padding:14px 22px;
-      border-radius:12px;
-      font-weight:700;
-      font-size:16px;
-      text-decoration:none;
-      box-shadow: 0 6px 18px rgba(214,66,59,0.18);
-    }
-    .secondary-cta{
-      background:transparent;
-      border:2px solid var(--blue);
-      color:var(--blue);
-      padding:12px 18px;
-      border-radius:12px;
-      font-weight:600;
-      text-decoration:none;
-    }
-    .hero-right{
-      flex:0 0 320px;
-      min-width:240px;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-    }
-    .mock{
-      width:220px;
-      height:300px;
-      border-radius:12px;
-      background:linear-gradient(180deg,#ffffff,#f3f7fb);
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-      box-shadow:0 10px 30px rgba(15,76,129,0.08);
-      border:1px solid rgba(15,76,129,0.04);
-    }
-    .mock h3{margin:0;color:var(--blue)}
-    .mock p{margin:6px 0 0 0;color:var(--muted);font-size:13px}
-
-    /* SECTIONS */
-    section{margin-bottom:24px}
-    .card{
-      background:var(--bg);
-      border-radius:14px;
-      padding:22px;
-      box-shadow:var(--card-shadow);
-    }
-    .grid-3{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:16px;
-    }
-    .benefits ul{padding:0;margin:0;list-style:none}
-    .benefits li{
-      display:flex;
-      gap:12px;
-      align-items:flex-start;
-      margin-bottom:12px;
-    }
-    .icon{
-      width:36px;height:36px;border-radius:10px;
-      background:linear-gradient(180deg,var(--blue-light),var(--blue));
-      color:white;display:flex;align-items:center;justify-content:center;
-      font-weight:700;
-      flex:0 0 36px;
-    }
-    h2{margin-top:0;color:#0b2e4a}
-    .muted{color:var(--muted)}
-
-    /* Bonuses */
-    .bonus{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-    }
-    .bonus .item{
-      flex:1 1 220px;
-      border-radius:12px;
-      padding:16px;
-      background:linear-gradient(180deg,#fff,#fbfdff);
-      border:1px solid rgba(11,46,74,0.04);
-    }
-    .bonus .price{display:inline-block;margin-top:10px;background:transparent;color:var(--blue);padding:6px 10px;border-radius:8px;border:1px dashed rgba(11,46,74,0.06);font-weight:700}
-
-    /* Testimonials */
-    .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-    .quote{padding:18px;border-radius:12px;background:#fff;border-left:4px solid rgba(11,46,74,0.06)}
-    .quote p{margin:0 0 10px 0}
-    .author{font-weight:700;font-size:14px;color:var(--blue)}
-
-    /* FAQ */
-    .faq .q{margin-bottom:14px}
-    .faq summary{font-weight:700;cursor:pointer;list-style:none}
-    details{background:#fff;padding:12px;border-radius:10px;border:1px solid rgba(11,46,74,0.04)}
-
-    /* final CTA */
-    .final-cta{
-      display:flex;
-      gap:16px;
-      align-items:center;
-      justify-content:space-between;
-      flex-wrap:wrap;
-      background:linear-gradient(180deg,#ffffff,#fbfcff);
-      padding:20px;border-radius:12px;border:1px solid rgba(11,46,74,0.04);
-    }
-    .final-cta .left{display:flex;gap:14px;align-items:center}
-    .final-cta h3{margin:0;color:var(--blue)}
-    .badge{background:var(--blue);color:#fff;padding:8px 12px;border-radius:10px;font-weight:700}
-
-    /* responsive */
-    @media (max-width:900px){
-      .testimonials{grid-template-columns:repeat(1,1fr)}
-      .grid-3{grid-template-columns:repeat(1,1fr)}
-      .hero{flex-direction:column;align-items:stretch}
-      .hero-right{order:-1}
-    }
-    @media (max-width:480px){
-      h1{font-size:22px}
-      .price{padding:12px 16px}
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Jak odzyskać spokój w 14 dni bez rewolucji w życiu</title>
+    <meta name="description" content="Program dla zapracowanych kobiet. Odzyskaj spokój w 60-90 min dziennie, bez technikaliów. Cena startowa 55 zł.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Jak odzyskać spokój w 14 dni bez rewolucji w życiu">
+    <meta property="og:description" content="Program dla zapracowanych kobiet. 14 dni, 60-90 min dziennie.">
+    <meta property="og:type" content="website">
+    
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Sections */
+        section {
+            padding: 60px 0;
+        }
+        
+        /* Typography */
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            font-weight: 700;
+            color: #1e40af;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        p {
+            font-size: 1.125rem;
+            margin-bottom: 15px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .hero h1 {
+            color: white;
+            font-size: 2.8rem;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            opacity: 0.95;
+        }
+        
+        .hero .mini-proof {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            margin: 20px 0;
+            font-size: 1rem;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 16px 40px;
+            font-size: 1.125rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background: #dc2626;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #b91c1c;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(220, 38, 38, 0.3);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #1e40af;
+            margin-left: 15px;
+        }
+        
+        .btn-secondary:hover {
+            background: #f3f4f6;
+        }
+        
+        /* Lists */
+        ul.check-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        ul.check-list li {
+            padding: 12px 0;
+            padding-left: 35px;
+            position: relative;
+            font-size: 1.125rem;
+        }
+        
+        ul.check-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1e40af;
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+        
+        ul.x-list li:before {
+            content: "✗";
+            color: #dc2626;
+        }
+        
+        /* Cards */
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .card h3 {
+            color: #1e40af;
+        }
+        
+        /* Grid */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        /* Steps */
+        .steps {
+            counter-reset: step-counter;
+            margin: 40px 0;
+        }
+        
+        .step {
+            counter-increment: step-counter;
+            position: relative;
+            padding-left: 70px;
+            margin-bottom: 40px;
+        }
+        
+        .step:before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            background: #1e40af;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            line-height: 50px;
+            text-align: center;
+        }
+        
+        /* Price Box */
+        .price-box {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            border-radius: 10px;
+            padding: 50px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .price-box h2 {
+            color: white;
+        }
+        
+        .price {
+            font-size: 4rem;
+            font-weight: 800;
+            margin: 20px 0;
+        }
+        
+        .price-note {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 25px 0;
+        }
+        
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+        
+        .faq-answer {
+            color: #4b5563;
+            font-size: 1.1rem;
+        }
+        
+        /* Trust Bar */
+        .trust-bar {
+            background: #f3f4f6;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #6b7280;
+        }
+        
+        .trust-bar span {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        
+        /* Background Variations */
+        .bg-light {
+            background: #f9fafb;
+        }
+        
+        .bg-white {
+            background: white;
+        }
+        
+        /* Error/Success Boxes */
+        .error-box {
+            background: #fee2e2;
+            border-left: 4px solid #dc2626;
+            padding: 25px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        
+        .success-box {
+            background: #d1fae5;
+            border-left: 4px solid #059669;
+            padding: 25px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        
+        /* Testimonial */
+        .testimonial {
+            background: #eff6ff;
+            border-left: 4px solid #1e40af;
+            padding: 30px;
+            border-radius: 6px;
+            font-style: italic;
+            margin: 30px 0;
+            font-size: 1.15rem;
+        }
+        
+        /* Thank You Section */
+        .thank-you {
+            display: none;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .thank-you.active {
+            display: block;
+        }
+        
+        .thank-you-box {
+            background: #f9fafb;
+            border-radius: 10px;
+            padding: 50px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.6rem;
+            }
+            
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            
+            .btn-secondary {
+                margin-left: 0;
+                margin-top: 15px;
+                display: block;
+            }
+            
+            .price {
+                font-size: 3rem;
+            }
+            
+            section {
+                padding: 40px 0;
+            }
+            
+            .trust-bar span {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
-  <main class="container" role="main">
-    <!-- HERO -->
-    <header class="hero" aria-label="Hero">
-      <div class="hero-left">
-        <span class="eyebrow">Program 14 dni</span>
-        <h1>[Czuły Reset. 14 dni do spokoju, energii i kobiecej równowagi]</h1>
-        <p class="tagline">Naturalne, proste praktyki oddechowe, mikrorytuały i rytm dnia zaprojektowany dla kobiet, które chcą odzyskać spokój bez rewolucji w życiu.</p>
-        <div class="cta-row">
-          <a class="price" href="#kup">Kup Teraz za [55] ZŁ</a>
-          <a class="secondary-cta" href="#co-znajdziesz">Sprawdź co znajdziesz</a>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <h1>Jak odzyskać spokój w 14 dni<br>bez rewolucji w życiu</h1>
+            <p class="subtitle">Dla zapracowanych kobiet – zrobisz to po pracy, w 60–90 min, bez technikaliów.</p>
+            <div class="mini-proof">Wczoraj dołączyło 317 kobiet</div>
+            <br><br>
+            <a href="#cta" class="btn btn-primary">Kup Teraz — 55 zł</a>
+            <a href="#co-dostajesz" class="btn btn-secondary">Zobacz co dostajesz</a>
         </div>
-        <p class="muted" style="margin-top:12px;font-size:13px">Natychmiastowy dostęp po zakupie • Certyfikat jakości treści • Bonus: 20 afirmacji</p>
-      </div>
-      <div class="hero-right" aria-hidden="true">
-        <div class="mock" role="img" aria-label="Okładka ebooka czuły reset">
-          <h3>Czuły Reset</h3>
-          <p>14 dni do spokoju</p>
-        </div>
-      </div>
-    </header>
-
-    <!-- CO ZNAJDZIESZ -->
-    <section id="co-znajdziesz" class="card benefits" aria-label="Co znajdziesz w ebooku">
-      <h2>Co znajdziesz w środku</h2>
-      <p class="muted">Krótko, praktycznie i dopasowane do życia — plan 14 dni, techniki oddechowe, rytuały poranka i wieczora oraz proste sposoby na mikro-reset w biegu.</p>
-
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:18px">
-        <ul>
-          <li><span class="icon">1</span><div><strong>Plan 14 dni</strong><div class="muted">Krok po kroku, dzień po dniu — reset rytmu i energii.</div></div></li>
-          <li><span class="icon">2</span><div><strong>Techniki oddechowe</strong><div class="muted">Szybkie praktyki 3-minutowe: wyciszenie i regulacja układu nerwowego.</div></div></li>
-          <li><span class="icon">3</span><div><strong>Rytuały poranka i wieczoru</strong><div class="muted">Jak ustawić rytm dnia, by kortyzol znów był sprzymierzeńcem.</div></div></li>
-        </ul>
-
-        <ul>
-          <li><span class="icon">4</span><div><strong>Praktyczne ćwiczenia</strong><div class="muted">Mikro-przerwy, zakotwiczenia w ciele, przytulenie wewnętrzne.</div></div></li>
-          <li><span class="icon">5</span><div><strong>Cyfrowy reset</strong><div class="muted">Jak odłączyć się od ekranów bez poczucia winy.</div></div></li>
-          <li><span class="icon">6</span><div><strong>Bonus afirmacje</strong><div class="muted">20 afirmacji dla kobiety w mocy i spokoju — gotowy do druku.</div></div></li>
-        </ul>
-      </div>
     </section>
 
-    <!-- BONUSY -->
-    <section class="card" aria-label="Bonusy">
-      <h2>Bonusy — dodatkowa wartość</h2>
-      <p class="muted">Kupując dziś otrzymujesz także trzy dodatkowe materiały przygotowane specjalnie dla uczestniczek programu.</p>
-
-      <div class="bonus" style="margin-top:14px">
-        <div class="item">
-          <h4>Bonus 1 — 20 afirmacji (PDF)</h4>
-          <p class="muted">Krótkie, codzienne afirmacje — do druku lub ustawienia jako przypomnienie.</p>
-          <div class="price">Wartość: wliczona</div>
+    <!-- SECTION 2: DLA KOGO / NIE DLA KOGO -->
+    <section class="bg-white">
+        <div class="container">
+            <h2>Dla kogo jest ten program?</h2>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h3>✓ To dla Ciebie, jeśli:</h3>
+                    <ul class="check-list">
+                        <li>Masz 60–90 min wieczorem</li>
+                        <li>Chcesz prosty i naturalny sposób na spokój</li>
+                        <li>Lubisz prowadzenie krok-po-kroku</li>
+                        <li>Wolisz gotowy plan zamiast szukania informacji</li>
+                        <li>Chcesz odzyskać energię bez radykalnych zmian</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>✗ Nie dla Ciebie, jeśli:</h3>
+                    <ul class="check-list x-list">
+                        <li>Oczekujesz efektów bez pracy</li>
+                        <li>Nie masz 10 min dziennie</li>
+                        <li>Szukasz "magicznej pigułki"</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-        <div class="item">
-          <h4>Bonus 2 — Mini-audio: Reset w 3 minuty</h4>
-          <p class="muted">Krótka nagrana praktyka oddechowa do codziennego użycia.</p>
-          <div class="price">Wartość: wliczona</div>
-        </div>
-
-        <div class="item">
-          <h4>Bonus 3 — Dziennik 14 dni</h4>
-          <p class="muted">Praktyczny arkusz do śledzenia postępów, obserwacji i rytuałów.</p>
-          <div class="price">Wartość: wliczona</div>
-        </div>
-      </div>
     </section>
 
-    <!-- OPINIE -->
-    <section class="card" aria-label="Opinie klientów">
-      <h2>Opinie kobiet, które skorzystały</h2>
-      <div class="testimonials" style="margin-top:14px">
-        <div class="quote">
-          <p>"Po tygodniu z Czułym Resetem zaczęłam zauważać, że moje wieczory są spokojniejsze. Mniej scrollowania, lepszy sen." </p>
-          <div class="author">— Anna, 34 lata, mama dwójki dzieci</div>
+    <!-- SECTION 3: EFEKT W 60-90 MIN -->
+    <section class="bg-light">
+        <div class="container">
+            <h2>Po dzisiejszym wieczorze będziesz mieć:</h2>
+            <ul class="check-list" style="max-width: 700px; margin: 0 auto;">
+                <li>Gotowy plan 14 dni</li>
+                <li>Listę 5 mikro-rytuałów</li>
+                <li>Mini-audio „Reset w 3 minuty"</li>
+                <li>Gotową stronę „Kup teraz"</li>
+                <li>Automatyczną dostawę PDF</li>
+            </ul>
         </div>
-        <div class="quote">
-          <p>"Proste, zrozumiałe techniki. Używam 'resetu w 3 minuty' w pracy — pomaga wrócić do równowagi." </p>
-          <div class="author">— Marta, 29 lat, specjalistka HR</div>
-        </div>
-        <div class="quote">
-          <p>"Plan 14 dni był dla mnie mapą. Nie obiecuje cudu, ale daje realne zmiany w oddechu i energii." </p>
-          <div class="author">— Ewa, 42 lata, menedżerka</div>
-        </div>
-      </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="card faq" aria-label="FAQ">
-      <h2>Najczęściej zadawane pytania</h2>
-
-      <div style="margin-top:12px">
-        <details class="q">
-          <summary>1. Czy program wymaga dużych zmian w życiu?</summary>
-          <p class="muted">Nie — to zbiór małych, praktycznych kroków, które możesz wprowadzać stopniowo, bez rezygnowania z obowiązków.</p>
-        </details>
-
-        <details class="q">
-          <summary>2. Ile czasu dziennie trzeba poświęcić?</summary>
-          <p class="muted">Codzienne praktyki zajmują od 3 do 20 minut — większość to krótkie mikro-rytuały.</p>
-        </details>
-
-        <details class="q">
-          <summary>3. Czy e-book ma materiały do druku?</summary>
-          <p class="muted">Tak — m.in. dziennik 14 dni i plik z 20 afirmacjami gotowymi do druku.</p>
-        </details>
-
-        <details class="q">
-          <summary>4. Czy ten program zastępuje terapię?</summary>
-          <p class="muted">Nie. To materiał edukacyjny i praktyczny. W przypadku poważnych problemów ze zdrowiem fizycznym lub psychicznym sugerujemy konsultację ze specjalistą.</p>
-        </details>
-
-        <details class="q">
-          <summary>5. Jak otrzymam e-book po zakupie?</summary>
-          <p class="muted">Po opłaceniu otrzymasz link do pobrania pliku (PDF) oraz bonusy w jednym e-mailu.</p>
-        </details>
-      </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section class="final-cta" id="kup" aria-label="Kup teraz">
-      <div class="left">
-        <div class="badge">E-BOOK + BONUSY</div>
-        <div>
-          <h3>Kup Teraz za [55] ZŁ</h3>
-          <div class="muted">Natychmiastowy dostęp | Plik PDF + bonusy</div>
+    <!-- SECTION 4: CO DOSTAJESZ -->
+    <section class="bg-white" id="co-dostajesz">
+        <div class="container">
+            <h2>Co dostajesz w środku?</h2>
+            
+            <div class="card">
+                <h3>📦 Kompletny pakiet</h3>
+                <ul class="check-list">
+                    <li>Szablon strony sprzedażowej</li>
+                    <li>Przykładowy tekst (5 bulletów)</li>
+                    <li>Instrukcja „Kup teraz" + płatność</li>
+                    <li>Szablon „Dziękuję / Pobierz"</li>
+                    <li>Checklista wdrożenia w 15 min</li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div style="display:flex;gap:12px">
-        <a class="price" href="#kup">Kup Teraz za [55] ZŁ</a>
-        <a class="secondary-cta" href="#co-znajdziesz">Zobacz zawartość</a>
-      </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer style="margin-top:18px;text-align:center;color:var(--muted);font-size:13px">
-      <p>© 2025 kobietaDiament — <span style="white-space:nowrap">Wszystkie prawa zastrzeżone.</span></p>
-      <p style="margin-top:8px">Informacje zawarte w e-booku mają charakter edukacyjny i nie zastępują porady medycznej.</p>
-    </footer>
-  </main>
+    <!-- SECTION 5: JAK TO DZIAŁA -->
+    <section class="bg-light">
+        <div class="container">
+            <h2>Jak to działa? (3 kroki)</h2>
+            
+            <div class="steps">
+                <div class="step">
+                    <h3>Wybierasz temat i wklejasz szablon</h3>
+                    <p>Gotowy szablon strony — po prostu kopiujesz i wklejasz.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Dodajesz przycisk „Kup teraz" + link do płatności</h3>
+                    <p>Prosty proces: jeden przycisk, jeden link — działa od razu.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Ustawiasz automatyczną dostawę (PDF / mini-kurs)</h3>
+                    <p>Po płatności kupujący dostaje produkt — wszystko automatycznie.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: NAJCZĘSTSZY BŁĄD -->
+    <section class="bg-white">
+        <div class="container">
+            <h2>Najczęstszy błąd → Rozwiązanie</h2>
+            
+            <div class="error-box">
+                <h3 style="color: #dc2626;">❌ Błąd: Pisanie długich opisów</h3>
+                <p>Większość osób pisze zbyt dużo tekstu, co odstrasza kupujących.</p>
+            </div>
+            
+            <div class="success-box">
+                <h3 style="color: #059669;">✓ Rozwiązanie: Nagłówek + 5 bulletów + CTA</h3>
+                <p>Użyj mocnego nagłówka + 5 bulletów + jeden przycisk. Strona ma sprzedawać kliknięcie, nie być książką.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: MINI CASE -->
+    <section class="bg-light">
+        <div class="container">
+            <h2>Przykład z życia</h2>
+            
+            <div class="testimonial">
+                <p><strong>„Zrobiłam 3 pierwsze sprzedaże w 48 h bez reklam (tylko post + ta strona). Cena: 55 zł."</strong></p>
+                <p style="margin-top: 15px; font-style: normal; font-size: 0.95rem;">Lub wersja dla nowej użytkowniczki: „Zaczynam dziś — wpiszę wyniki za 48 h."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: OFERTA / CENA -->
+    <section class="bg-white" id="cta">
+        <div class="container">
+            <div class="price-box">
+                <h2>Cena startowa</h2>
+                <div class="price">55 zł</div>
+                <p class="price-note">⚡ Limit: pierwsze 20 osób w tej cenie</p>
+                <p style="margin-bottom: 30px; font-size: 1.15rem;">
+                    Kupujesz gotowy, powtarzalny system.
+                </p>
+                <a href="#thankyou" class="btn btn-primary">KUP TERAZ — 55 zł</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: FAQ -->
+    <section class="bg-light">
+        <div class="container">
+            <h2>Najczęściej zadawane pytania</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Czy muszę umieć kodować?</div>
+                <div class="faq-answer">Nie. Wszystko jest gotowe do skopiowania i wklejenia.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Ile czasu to zajmie?</div>
+                <div class="faq-answer">60–90 min na pierwsze wdrożenie.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Jak dostanę produkt?</div>
+                <div class="faq-answer">Automatyczna dostawa + mail po płatności. Natychmiastowy dostęp.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: CTA KOŃCOWE -->
+    <section class="bg-white">
+        <div class="container" style="text-align: center;">
+            <h2>Gotowa na spokój?</h2>
+            <a href="#thankyou" class="btn btn-primary" style="font-size: 1.3rem; padding: 20px 50px;">KUP TERAZ — 55 zł</a>
+            <p style="margin-top: 30px; color: #6b7280;">
+                Płatność Stripe / Gumroad. Masz pytanie? Napisz: <a href="mailto:kontakt@twojadomena.pl" style="color: #1e40af;">kontakt@twojadomena.pl</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        <span>🔒 Stripe</span>
+        <span>💳 Gumroad</span>
+        <span>✓ 14-dni zwrot</span>
+        <span>🔐 Bezpieczne płatności</span>
+    </div>
+
+    <!-- BONUS: SEKCJA DZIĘKUJĘ / POBIERZ -->
+    <section class="thank-you" id="thankyou">
+        <div class="container">
+            <div class="thank-you-box">
+                <h1 style="color: #1e40af;">🎉 Dziękuję!</h1>
+                <p style="font-size: 1.3rem; margin: 30px 0;">
+                    Twój e-produkt <strong>„Czuły Reset"</strong> jest gotowy.
+                </p>
+                <a href="#download" class="btn btn-primary" style="font-size: 1.2rem;">👉 POBIERZ TERAZ (PDF)</a>
+                <p style="margin-top: 30px; color: #6b7280;">
+                    Link wysłałam też na e-mail.<br>
+                    W razie problemów napisz: <a href="mailto:kontakt@twojadomena.pl" style="color: #1e40af;">kontakt@twojadomena.pl</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
-
