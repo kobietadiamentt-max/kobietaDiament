@@ -1,2 +1,347 @@
 # kobietaDiament
 Czuły Reset. 14 dni do spokoju, energii i kobiecej równowagi — Czujesz, że jesteś zmęczona ciągłym „muszę”? Ten e-book pomoże Ci odzyskać spokój, energię i lekkość w codzienności.
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Czuły Reset — 14 dni do spokoju | Kup teraz</title>
+  <meta name="description" content="Czuły Reset — 14 dni do spokoju, energii i kobiecej równowagi. Naturalne metody na stres, rytuały dnia i praktyki oddechowe." />
+  <style>
+    :root{
+      --blue:#0f4c81;
+      --blue-light:#2b6ea8;
+      --bg:#ffffff;
+      --muted:#6b7280;
+      --cta:#d6423b; /* czerwony CTA */
+      --card-shadow: 0 6px 20px rgba(15,76,129,0.08);
+      --radius:14px;
+      --maxwidth:1100px;
+      --gap:20px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, "Helvetica Neue", Arial, sans-serif;
+      background:linear-gradient(180deg,#f8fbff 0%, #ffffff 100%);
+      color:#102030;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+      padding:24px;
+      display:flex;
+      justify-content:center;
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--maxwidth);
+      margin:0 auto;
+    }
+
+    /* HERO */
+    .hero{
+      display:flex;
+      gap:var(--gap);
+      align-items:center;
+      background:var(--bg);
+      border-radius:18px;
+      padding:28px;
+      box-shadow:var(--card-shadow);
+      margin-bottom:28px;
+      flex-wrap:wrap;
+    }
+    .hero-left{
+      flex:1 1 420px;
+      min-width:260px;
+    }
+    .eyebrow{
+      display:inline-block;
+      background:linear-gradient(90deg,var(--blue-light),var(--blue));
+      color:#fff;
+      padding:6px 12px;
+      border-radius:999px;
+      font-size:13px;
+      letter-spacing:.2px;
+      margin-bottom:12px;
+    }
+    h1{
+      margin:0 0 12px 0;
+      font-size:28px;
+      color:var(--blue);
+      line-height:1.06;
+    }
+    .tagline{
+      color:var(--muted);
+      margin-bottom:18px;
+      font-size:16px;
+    }
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    .price{
+      background:var(--cta);
+      color:#fff;
+      padding:14px 22px;
+      border-radius:12px;
+      font-weight:700;
+      font-size:16px;
+      text-decoration:none;
+      box-shadow: 0 6px 18px rgba(214,66,59,0.18);
+    }
+    .secondary-cta{
+      background:transparent;
+      border:2px solid var(--blue);
+      color:var(--blue);
+      padding:12px 18px;
+      border-radius:12px;
+      font-weight:600;
+      text-decoration:none;
+    }
+    .hero-right{
+      flex:0 0 320px;
+      min-width:240px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    .mock{
+      width:220px;
+      height:300px;
+      border-radius:12px;
+      background:linear-gradient(180deg,#ffffff,#f3f7fb);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 10px 30px rgba(15,76,129,0.08);
+      border:1px solid rgba(15,76,129,0.04);
+    }
+    .mock h3{margin:0;color:var(--blue)}
+    .mock p{margin:6px 0 0 0;color:var(--muted);font-size:13px}
+
+    /* SECTIONS */
+    section{margin-bottom:24px}
+    .card{
+      background:var(--bg);
+      border-radius:14px;
+      padding:22px;
+      box-shadow:var(--card-shadow);
+    }
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+    }
+    .benefits ul{padding:0;margin:0;list-style:none}
+    .benefits li{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      margin-bottom:12px;
+    }
+    .icon{
+      width:36px;height:36px;border-radius:10px;
+      background:linear-gradient(180deg,var(--blue-light),var(--blue));
+      color:white;display:flex;align-items:center;justify-content:center;
+      font-weight:700;
+      flex:0 0 36px;
+    }
+    h2{margin-top:0;color:#0b2e4a}
+    .muted{color:var(--muted)}
+
+    /* Bonuses */
+    .bonus{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .bonus .item{
+      flex:1 1 220px;
+      border-radius:12px;
+      padding:16px;
+      background:linear-gradient(180deg,#fff,#fbfdff);
+      border:1px solid rgba(11,46,74,0.04);
+    }
+    .bonus .price{display:inline-block;margin-top:10px;background:transparent;color:var(--blue);padding:6px 10px;border-radius:8px;border:1px dashed rgba(11,46,74,0.06);font-weight:700}
+
+    /* Testimonials */
+    .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .quote{padding:18px;border-radius:12px;background:#fff;border-left:4px solid rgba(11,46,74,0.06)}
+    .quote p{margin:0 0 10px 0}
+    .author{font-weight:700;font-size:14px;color:var(--blue)}
+
+    /* FAQ */
+    .faq .q{margin-bottom:14px}
+    .faq summary{font-weight:700;cursor:pointer;list-style:none}
+    details{background:#fff;padding:12px;border-radius:10px;border:1px solid rgba(11,46,74,0.04)}
+
+    /* final CTA */
+    .final-cta{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      background:linear-gradient(180deg,#ffffff,#fbfcff);
+      padding:20px;border-radius:12px;border:1px solid rgba(11,46,74,0.04);
+    }
+    .final-cta .left{display:flex;gap:14px;align-items:center}
+    .final-cta h3{margin:0;color:var(--blue)}
+    .badge{background:var(--blue);color:#fff;padding:8px 12px;border-radius:10px;font-weight:700}
+
+    /* responsive */
+    @media (max-width:900px){
+      .testimonials{grid-template-columns:repeat(1,1fr)}
+      .grid-3{grid-template-columns:repeat(1,1fr)}
+      .hero{flex-direction:column;align-items:stretch}
+      .hero-right{order:-1}
+    }
+    @media (max-width:480px){
+      h1{font-size:22px}
+      .price{padding:12px 16px}
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <!-- HERO -->
+    <header class="hero" aria-label="Hero">
+      <div class="hero-left">
+        <span class="eyebrow">Program 14 dni</span>
+        <h1>[Czuły Reset. 14 dni do spokoju, energii i kobiecej równowagi]</h1>
+        <p class="tagline">Naturalne, proste praktyki oddechowe, mikrorytuały i rytm dnia zaprojektowany dla kobiet, które chcą odzyskać spokój bez rewolucji w życiu.</p>
+        <div class="cta-row">
+          <a class="price" href="#kup">Kup Teraz za [55] ZŁ</a>
+          <a class="secondary-cta" href="#co-znajdziesz">Sprawdź co znajdziesz</a>
+        </div>
+        <p class="muted" style="margin-top:12px;font-size:13px">Natychmiastowy dostęp po zakupie • Certyfikat jakości treści • Bonus: 20 afirmacji</p>
+      </div>
+      <div class="hero-right" aria-hidden="true">
+        <div class="mock" role="img" aria-label="Okładka ebooka czuły reset">
+          <h3>Czuły Reset</h3>
+          <p>14 dni do spokoju</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- CO ZNAJDZIESZ -->
+    <section id="co-znajdziesz" class="card benefits" aria-label="Co znajdziesz w ebooku">
+      <h2>Co znajdziesz w środku</h2>
+      <p class="muted">Krótko, praktycznie i dopasowane do życia — plan 14 dni, techniki oddechowe, rytuały poranka i wieczora oraz proste sposoby na mikro-reset w biegu.</p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:18px">
+        <ul>
+          <li><span class="icon">1</span><div><strong>Plan 14 dni</strong><div class="muted">Krok po kroku, dzień po dniu — reset rytmu i energii.</div></div></li>
+          <li><span class="icon">2</span><div><strong>Techniki oddechowe</strong><div class="muted">Szybkie praktyki 3-minutowe: wyciszenie i regulacja układu nerwowego.</div></div></li>
+          <li><span class="icon">3</span><div><strong>Rytuały poranka i wieczoru</strong><div class="muted">Jak ustawić rytm dnia, by kortyzol znów był sprzymierzeńcem.</div></div></li>
+        </ul>
+
+        <ul>
+          <li><span class="icon">4</span><div><strong>Praktyczne ćwiczenia</strong><div class="muted">Mikro-przerwy, zakotwiczenia w ciele, przytulenie wewnętrzne.</div></div></li>
+          <li><span class="icon">5</span><div><strong>Cyfrowy reset</strong><div class="muted">Jak odłączyć się od ekranów bez poczucia winy.</div></div></li>
+          <li><span class="icon">6</span><div><strong>Bonus afirmacje</strong><div class="muted">20 afirmacji dla kobiety w mocy i spokoju — gotowy do druku.</div></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- BONUSY -->
+    <section class="card" aria-label="Bonusy">
+      <h2>Bonusy — dodatkowa wartość</h2>
+      <p class="muted">Kupując dziś otrzymujesz także trzy dodatkowe materiały przygotowane specjalnie dla uczestniczek programu.</p>
+
+      <div class="bonus" style="margin-top:14px">
+        <div class="item">
+          <h4>Bonus 1 — 20 afirmacji (PDF)</h4>
+          <p class="muted">Krótkie, codzienne afirmacje — do druku lub ustawienia jako przypomnienie.</p>
+          <div class="price">Wartość: wliczona</div>
+        </div>
+
+        <div class="item">
+          <h4>Bonus 2 — Mini-audio: Reset w 3 minuty</h4>
+          <p class="muted">Krótka nagrana praktyka oddechowa do codziennego użycia.</p>
+          <div class="price">Wartość: wliczona</div>
+        </div>
+
+        <div class="item">
+          <h4>Bonus 3 — Dziennik 14 dni</h4>
+          <p class="muted">Praktyczny arkusz do śledzenia postępów, obserwacji i rytuałów.</p>
+          <div class="price">Wartość: wliczona</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPINIE -->
+    <section class="card" aria-label="Opinie klientów">
+      <h2>Opinie kobiet, które skorzystały</h2>
+      <div class="testimonials" style="margin-top:14px">
+        <div class="quote">
+          <p>"Po tygodniu z Czułym Resetem zaczęłam zauważać, że moje wieczory są spokojniejsze. Mniej scrollowania, lepszy sen." </p>
+          <div class="author">— Anna, 34 lata, mama dwójki dzieci</div>
+        </div>
+        <div class="quote">
+          <p>"Proste, zrozumiałe techniki. Używam 'resetu w 3 minuty' w pracy — pomaga wrócić do równowagi." </p>
+          <div class="author">— Marta, 29 lat, specjalistka HR</div>
+        </div>
+        <div class="quote">
+          <p>"Plan 14 dni był dla mnie mapą. Nie obiecuje cudu, ale daje realne zmiany w oddechu i energii." </p>
+          <div class="author">— Ewa, 42 lata, menedżerka</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="card faq" aria-label="FAQ">
+      <h2>Najczęściej zadawane pytania</h2>
+
+      <div style="margin-top:12px">
+        <details class="q">
+          <summary>1. Czy program wymaga dużych zmian w życiu?</summary>
+          <p class="muted">Nie — to zbiór małych, praktycznych kroków, które możesz wprowadzać stopniowo, bez rezygnowania z obowiązków.</p>
+        </details>
+
+        <details class="q">
+          <summary>2. Ile czasu dziennie trzeba poświęcić?</summary>
+          <p class="muted">Codzienne praktyki zajmują od 3 do 20 minut — większość to krótkie mikro-rytuały.</p>
+        </details>
+
+        <details class="q">
+          <summary>3. Czy e-book ma materiały do druku?</summary>
+          <p class="muted">Tak — m.in. dziennik 14 dni i plik z 20 afirmacjami gotowymi do druku.</p>
+        </details>
+
+        <details class="q">
+          <summary>4. Czy ten program zastępuje terapię?</summary>
+          <p class="muted">Nie. To materiał edukacyjny i praktyczny. W przypadku poważnych problemów ze zdrowiem fizycznym lub psychicznym sugerujemy konsultację ze specjalistą.</p>
+        </details>
+
+        <details class="q">
+          <summary>5. Jak otrzymam e-book po zakupie?</summary>
+          <p class="muted">Po opłaceniu otrzymasz link do pobrania pliku (PDF) oraz bonusy w jednym e-mailu.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta" id="kup" aria-label="Kup teraz">
+      <div class="left">
+        <div class="badge">E-BOOK + BONUSY</div>
+        <div>
+          <h3>Kup Teraz za [55] ZŁ</h3>
+          <div class="muted">Natychmiastowy dostęp | Plik PDF + bonusy</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:12px">
+        <a class="price" href="#kup">Kup Teraz za [55] ZŁ</a>
+        <a class="secondary-cta" href="#co-znajdziesz">Zobacz zawartość</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="margin-top:18px;text-align:center;color:var(--muted);font-size:13px">
+      <p>© 2025 kobietaDiament — <span style="white-space:nowrap">Wszystkie prawa zastrzeżone.</span></p>
+      <p style="margin-top:8px">Informacje zawarte w e-booku mają charakter edukacyjny i nie zastępują porady medycznej.</p>
+    </footer>
+  </main>
+</body>
+</html>
+
